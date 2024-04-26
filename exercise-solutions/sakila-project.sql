@@ -1,10 +1,10 @@
 --1. Display the first and last name of each actor in a single column in upper case letters.
 --Name the column Actor Name.
-SELECT CONCAT(first_name, ' ',last_name) AS "Actor Name"
+SELECT CONCAT(first_name, ' ',last_name) AS 'Actor Name'
 FROM actor;
 
 --2. You need to find the ID number, first name, and last name of an actor, of whom you
---know only the first name, ‘Joe.’
+--know only the first name, ï¿½Joe.ï¿½
 SELECT actor_id, first_name, last_name
 FROM actor
 WHERE first_name = 'JOE';
@@ -14,7 +14,7 @@ SELECT *
 FROM actor
 WHERE last_name LIKE '%GEN%';
 
---4. Find all actors whose last names contain the letters ’LI’. This time, order the rows by
+--4. Find all actors whose last names contain the letters ï¿½LIï¿½. This time, order the rows by
 --last name and first name, in that order.
 SELECT *
 FROM actor
